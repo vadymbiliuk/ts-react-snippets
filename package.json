@@ -3,22 +3,63 @@
   "displayName": "ts-react-snippets",
   "description": "The snippets for TypeScript and React lovers",
   "version": "0.0.1",
+  "author": "Vadym Biliuk (vadym.biliuk@gmail.com) https://github.com/vadymbiliuk",
+  "publisher": "vadymbiliuk",
+  "keywords": [
+    "snippets",
+    "typescript",
+    "react",
+    "javascript",
+    "typescript",
+    "vscode",
+    "extension"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vadymbiliuk/ts-react-snippets"
+  },
   "engines": {
     "vscode": "^1.35.0"
   },
-  "author": "Vadym Biliuk",
   "categories": [
-    "Other"
+    "Snippets"
   ],
+  "extensionKind": "ui",
   "activationEvents": [
     "onCommand:extension.tsrSnippets"
   ],
-  "main": "./out/extension.js",
+  "main": "./out/src/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.tsrSnippets",
-        "title": "TS React Snippets"
+        "command": "extension.trSnippets",
+        "title": "TypeScript React snippets search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.trSnippets",
+        "key": "ctrl+alt+r",
+        "mac": "shift+cmd+r",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/ts-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/ts-snippets.json"
       }
     ]
   },
