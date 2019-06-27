@@ -1,7 +1,34 @@
 {
-  "Import React": {
-    "prefix": "imr",
-    "body": "import React from 'react';",
-    "description": "Import React"
+  "Create Redux Container structure": {
+    "prefix": "condux",
+    "body": [
+      "import { connect } from 'react-redux';",
+      "import { ${1:ViewName} } from '${2:ViewPath}';",
+      "\t",
+      "const mapStateToProps = state => ({",
+      "\t",
+      "});",
+      "\t",
+      "const mapDispatchToProps = {",
+      "\t",
+      "};",
+      "\t",
+      "export default connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps",
+      ")(${1:ViewName});",
+      "\t"
+    ],
+    "description": "Create Redux Container structure"
+  },
+  "Create TypeScript interface": {
+    "prefix": "int",
+    "body": ["export interface I${1:InterfaceName} {", "\t", "}"],
+    "description": "Creates TypeScript interface"
+  },
+  "Create TypeScript type": {
+    "prefix": "tp",
+    "body": ["export type ${1:TypeName} = ${2:type}"],
+    "description": "Creates TypeScript type"
   }
 }

@@ -31,12 +31,29 @@
     ],
     "description": "Create Redux Container structure"
   },
+  "Create TypeScript interface": {
+    "prefix": "int",
+    "body": ["export interface I${1:InterfaceName} {", "\t", "}"],
+    "description": "Creates TypeScript interface"
+  },
+  "Create TypeScript type": {
+    "prefix": "tp",
+    "body": ["export type ${1:TypeName} = ${2:type}"],
+    "description": "Creates TypeScript type"
+  },
   "Create React class component": {
     "prefix": "cc",
     "body": [
       "import React, { Component } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "\t",
+      "}",
+      "export interface I${1:${TM_FILENAME_BASE}}State {",
+      "\t",
+      "}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component<I${1:${TM_FILENAME_BASE}}Props, I${1:${TM_FILENAME_BASE}}State> {",
       "\tstate = {};",
       "",
       "\trender() {",
@@ -49,14 +66,18 @@
       "}",
       ""
     ],
-    "description": "Creates React class component"
+    "description": "Creates React class component with interfaces"
   },
   "Create React functional component": {
     "prefix": "fc",
     "body": [
       "import React from 'react';",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "\t",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}}: React.FC<I${1:${TM_FILENAME_BASE}}Props> = () => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
@@ -65,7 +86,7 @@
       "}",
       ""
     ],
-    "description": "Creates React functional component"
+    "description": "Creates React functional component with interface"
   },
   "Create useState hook": {
     "prefix": "useState",

@@ -59,7 +59,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/ts-snippets.json"
+        "path": "./snippets/ts-react-snippets.json"
       }
     ]
   },
