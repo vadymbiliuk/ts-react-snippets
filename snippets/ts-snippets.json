@@ -19,7 +19,7 @@
       ")(${1:ViewName});",
       "\t"
     ],
-    "description": "Create Redux Container structure"
+    "description": "Creates Redux Container structure"
   },
   "Create TypeScript interface": {
     "prefix": "int",
