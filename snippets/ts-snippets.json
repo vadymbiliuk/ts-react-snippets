@@ -30,5 +30,46 @@
     "prefix": "tp",
     "body": ["export type ${1:TypeName} = ${2:type}"],
     "description": "Creates TypeScript type"
+  },
+  "Create function": {
+    "prefix": "func",
+    "body": ["export function ${1:funcName}() {", "\t", "}"],
+    "description": "Creates TypeScript function"
+  },
+  "Create arrow function": {
+    "prefix": "afunc",
+    "body": [
+      "export const ${1:funcName} = (): ${2:funcReturnType} => {",
+      "\t",
+      "}"
+    ],
+    "description": "Creates TypeScript arrow function"
+  },
+  "Create class": {
+    "prefix": "cls",
+    "body": [
+      "export class ${1:className} {",
+      "\t// Fields:",
+      "\tprivate readonly _${2:fieldName}: ${3:fieldType};",
+      "\t",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "\t",
+      "\tconstructor() {",
+      "\t\tthis._${2:fieldName} = this.${2:propertyName};",
+      "\t}",
+      "}"
+    ],
+    "description": "Creates TypeScript class"
+  },
+  "Create abstract class": {
+    "prefix": "acls",
+    "body": [
+      "export abstract class ${1:className} {",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "}"
+    ],
+    "description": "Creates TypeScript abstract class"
   }
 }
