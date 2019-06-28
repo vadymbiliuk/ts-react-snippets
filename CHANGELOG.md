@@ -2,6 +2,10 @@
 
 # Release information
 
+[0.2.1] - 29-06-2019
+
+- Fix for version control
+
 [0.1.3] - 29-06-2019
 
 - README update
