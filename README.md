@@ -145,6 +145,8 @@ useDebugValue(value);
 
 ## Redux
 
+### `condux`
+
 ```typescript
 import { connect } from 'react-redux';
 import { ViewName } from 'ViewPath';
@@ -232,7 +234,7 @@ public propertyName: propertyType = propertyValue;
 
 ## Contributing
 
-Pull requests are always welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are always welcome in develop branch. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
