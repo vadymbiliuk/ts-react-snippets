@@ -38,7 +38,7 @@
       "",
       "export class ${1:${TM_FILENAME_BASE}} extends Component {",
       "\tstate = {};",
-      "",
+      "\t",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<div>",
@@ -50,6 +50,24 @@
       ""
     ],
     "description": "Creates React class component"
+  },
+  "Create React class pure component": {
+    "prefix": "cpc",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Creates React pire class component"
   },
   "Create React functional component": {
     "prefix": "fc",
