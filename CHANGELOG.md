@@ -2,6 +2,10 @@
 
 # Release information
 
+[0.1.2] - 29-06-2019
+
+- Minor fix with extension description
+
 [0.1.1] - 28-06-2019
 
 - Extension name update
