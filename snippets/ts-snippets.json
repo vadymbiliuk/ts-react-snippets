@@ -28,7 +28,7 @@
   },
   "Create TypeScript type": {
     "prefix": "tp",
-    "body": ["export type ${1:TypeName} = ${2:type}"],
+    "body": ["export type ${1:TypeName} = ${2:type};"],
     "description": "Creates TypeScript type"
   },
   "Create function": {
