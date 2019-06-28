@@ -2,7 +2,7 @@
   "name": "ts-react-snippets",
   "displayName": "ts-react-snippets",
   "description": "The snippets for TypeScript and React lovers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Vadym Biliuk (vadym.biliuk@gmail.com) https://github.com/vadymbiliuk",
   "publisher": "vadymbiliuk",
   "keywords": [
@@ -81,5 +81,5 @@
     "typescript": "^3.3.1",
     "vscode": "^1.1.28"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

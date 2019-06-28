@@ -80,6 +80,20 @@
     ],
     "description": "Creates TypeScript public property for class"
   },
+  "Create function": {
+    "prefix": "func",
+    "body": ["export function ${1:funcName}() {", "\t", "}"],
+    "description": "Creates TypeScript function"
+  },
+  "Create arrow function": {
+    "prefix": "afunc",
+    "body": [
+      "export const ${1:funcName} = (): ${2:funcReturnType} => {",
+      "\t",
+      "}"
+    ],
+    "description": "Creates TypeScript arrow function"
+  },
   "Create React class component": {
     "prefix": "cc",
     "body": [
@@ -108,7 +122,7 @@
     "description": "Creates React class component with interfaces"
   },
   "Create React class pure component": {
-    "prefix": "cc",
+    "prefix": "cpc",
     "body": [
       "import React, { Component } from 'react';",
       "",
@@ -204,7 +218,7 @@
   },
   "Create useDebugValue hook": {
     "prefix": "useDebugValue",
-    "body": ["useDebugValue(${1:value}"],
+    "body": ["useDebugValue(${1:value});"],
     "description": "Creates React useDebugValue hook"
   }
 }
