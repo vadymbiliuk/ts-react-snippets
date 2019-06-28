@@ -1,5 +1,7 @@
 # Extension for TypeScript/JavaScript React users
 
+The extension for TypeScript, JavaScript React users.
+
 # Supported languages and file extensions
 
 ### JavaScript
