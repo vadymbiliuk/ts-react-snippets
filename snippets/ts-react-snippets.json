@@ -31,12 +31,68 @@
     ],
     "description": "Create Redux Container structure"
   },
+  "Create TypeScript interface": {
+    "prefix": "int",
+    "body": ["export interface I${1:InterfaceName} {", "\t", "}"],
+    "description": "Creates TypeScript interface"
+  },
+  "Create TypeScript type": {
+    "prefix": "tp",
+    "body": ["export type ${1:TypeName} = ${2:type}"],
+    "description": "Creates TypeScript type"
+  },
+  "Create class": {
+    "prefix": "cls",
+    "body": [
+      "export class ${1:className} {",
+      "\t// Fields:",
+      "\tprivate readonly _${2:fieldName}: ${3:fieldType};",
+      "\t",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "\t",
+      "\tconstructor() {",
+      "\t\tthis._${2:fieldName} = this.${2:propertyName};",
+      "\t}",
+      "}"
+    ],
+    "description": "Creates TypeScript class"
+  },
+  "Create abstract class": {
+    "prefix": "acls",
+    "body": [
+      "export abstract class ${1:className} {",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "}"
+    ],
+    "description": "Creates TypeScript abstract class"
+  },
+  "Create TypeScript private field": {
+    "prefix": "cpf",
+    "body": ["private readonly _${1:fieldName}: ${2:fieldType};"],
+    "description": "Creates TypeScript private readonly field for class"
+  },
+  "Create TypeScript public property": {
+    "prefix": "cpp",
+    "body": [
+      "public ${1:propertyName}: ${2:propertyType} = ${3:propertyValue};"
+    ],
+    "description": "Creates TypeScript public property for class"
+  },
   "Create React class component": {
     "prefix": "cc",
     "body": [
       "import React, { Component } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "\t",
+      "}",
+      "export interface I${1:${TM_FILENAME_BASE}}State {",
+      "\t",
+      "}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component<I${1:${TM_FILENAME_BASE}}Props, I${1:${TM_FILENAME_BASE}}State> {",
       "\tstate = {};",
       "\t",
       "\trender() {",
@@ -49,14 +105,18 @@
       "}",
       ""
     ],
-    "description": "Creates React class component"
+    "description": "Creates React class component with interfaces"
   },
   "Create React class pure component": {
-    "prefix": "cpc",
+    "prefix": "cc",
     "body": [
-      "import React, { PureComponent } from 'react';",
+      "import React, { Component } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "\t",
+      "}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component<I${1:${TM_FILENAME_BASE}}Props> {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<div>",
@@ -67,14 +127,18 @@
       "}",
       ""
     ],
-    "description": "Creates React pire class component"
+    "description": "Creates React class pure component with interface"
   },
   "Create React functional component": {
     "prefix": "fc",
     "body": [
       "import React from 'react';",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "\t",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}}: React.FC<I${1:${TM_FILENAME_BASE}}Props> = () => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
@@ -83,7 +147,7 @@
       "}",
       ""
     ],
-    "description": "Creates React functional component"
+    "description": "Creates React functional component with interface"
   },
   "Create useState hook": {
     "prefix": "useState",

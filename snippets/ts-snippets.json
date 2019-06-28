@@ -1,7 +1,87 @@
 {
-  "Import React": {
-    "prefix": "imr",
-    "body": "import React from 'react';",
-    "description": "Import React"
+  "Create Redux Container structure": {
+    "prefix": "condux",
+    "body": [
+      "import { connect } from 'react-redux';",
+      "import { ${1:ViewName} } from '${2:ViewPath}';",
+      "\t",
+      "const mapStateToProps = state => ({",
+      "\t",
+      "});",
+      "\t",
+      "const mapDispatchToProps = {",
+      "\t",
+      "};",
+      "\t",
+      "export default connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps",
+      ")(${1:ViewName});",
+      "\t"
+    ],
+    "description": "Creates Redux Container structure"
+  },
+  "Create TypeScript interface": {
+    "prefix": "int",
+    "body": ["export interface I${1:InterfaceName} {", "\t", "}"],
+    "description": "Creates TypeScript interface"
+  },
+  "Create TypeScript type": {
+    "prefix": "tp",
+    "body": ["export type ${1:TypeName} = ${2:type}"],
+    "description": "Creates TypeScript type"
+  },
+  "Create function": {
+    "prefix": "func",
+    "body": ["export function ${1:funcName}() {", "\t", "}"],
+    "description": "Creates TypeScript function"
+  },
+  "Create arrow function": {
+    "prefix": "afunc",
+    "body": [
+      "export const ${1:funcName} = (): ${2:funcReturnType} => {",
+      "\t",
+      "}"
+    ],
+    "description": "Creates TypeScript arrow function"
+  },
+  "Create class": {
+    "prefix": "cls",
+    "body": [
+      "export class ${1:className} {",
+      "\t// Fields:",
+      "\tprivate readonly _${2:fieldName}: ${3:fieldType};",
+      "\t",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "\t",
+      "\tconstructor() {",
+      "\t\tthis._${2:fieldName} = this.${2:propertyName};",
+      "\t}",
+      "}"
+    ],
+    "description": "Creates TypeScript class"
+  },
+  "Create abstract class": {
+    "prefix": "acls",
+    "body": [
+      "export abstract class ${1:className} {",
+      "\t// Properties:",
+      "\tpublic ${2:propertyName}: ${3:propertyType} = ${4:propertyValue};",
+      "}"
+    ],
+    "description": "Creates TypeScript abstract class"
+  },
+  "Create TypeScript private field": {
+    "prefix": "cpf",
+    "body": ["private readonly _${1:fieldName}: ${2:fieldType};"],
+    "description": "Creates TypeScript private readonly field for class"
+  },
+  "Create TypeScript public property": {
+    "prefix": "cpp",
+    "body": [
+      "public ${1:propertyName}: ${2:propertyType} = ${3:propertyValue};"
+    ],
+    "description": "Creates TypeScript public property for class"
   }
 }

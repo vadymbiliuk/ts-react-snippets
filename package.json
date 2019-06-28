@@ -18,6 +18,7 @@
     "type": "git",
     "url": "https://github.com/vadymbiliuk/ts-react-snippets"
   },
+  "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.35.0"
   },
@@ -59,7 +60,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/ts-snippets.json"
+        "path": "./snippets/ts-react-snippets.json"
       }
     ]
   },
