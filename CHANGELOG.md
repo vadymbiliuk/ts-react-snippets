@@ -2,19 +2,7 @@
 
 # Release information
 
-[0.2.1] - 29-06-2019
-
-- Fix for version control
-
-[0.1.3] - 29-06-2019
-
-- README update
-
-[0.1.2] - 29-06-2019
-
-- Minor fix with extension description
-
-[0.1.1] - 28-06-2019
+[1.0.0] - 29-06-2019
 
 - Extension name update
 - Changelog fix
