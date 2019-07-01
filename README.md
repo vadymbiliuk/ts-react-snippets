@@ -2,6 +2,10 @@
 
 The extension for TypeScript, JavaScript React users.
 
+### Link for marketplace extension
+
+https://marketplace.visualstudio.com/items?itemName=vadymbiliuk.ts-react-snippets
+
 # Supported languages and file extensions
 
 ### JavaScript
