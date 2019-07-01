@@ -33,13 +33,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.trSnippets",
+        "command": "extension.tsrSnippets",
         "title": "TypeScript React snippets search"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.trSnippets",
+        "command": "extension.tsrSnippets",
         "key": "ctrl+alt+r",
         "mac": "shift+cmd+r",
         "when": "editorTextFocus"
