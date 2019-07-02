@@ -41,6 +41,24 @@
     "body": ["export type ${1:TypeName} = ${2:type}"],
     "description": "Creates TypeScript type"
   },
+  "Create function": {
+    "prefix": "func",
+    "body": [
+      "export function ${1:funcName}(): ${2:funcReturnType} {",
+      "\t",
+      "}"
+    ],
+    "description": "Creates TypeScript function"
+  },
+  "Create arrow function": {
+    "prefix": "afunc",
+    "body": [
+      "export const ${1:funcName} = (): ${2:funcReturnType} => {",
+      "\t",
+      "}"
+    ],
+    "description": "Creates TypeScript arrow function"
+  },
   "Create class": {
     "prefix": "cls",
     "body": [
@@ -79,20 +97,6 @@
       "public ${1:propertyName}: ${2:propertyType} = ${3:propertyValue};"
     ],
     "description": "Creates TypeScript public property for class"
-  },
-  "Create function": {
-    "prefix": "func",
-    "body": ["export function ${1:funcName}() {", "\t", "}"],
-    "description": "Creates TypeScript function"
-  },
-  "Create arrow function": {
-    "prefix": "afunc",
-    "body": [
-      "export const ${1:funcName} = (): ${2:funcReturnType} => {",
-      "\t",
-      "}"
-    ],
-    "description": "Creates TypeScript arrow function"
   },
   "Create React class component": {
     "prefix": "cc",
