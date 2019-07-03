@@ -1,5 +1,9 @@
 # Extension for TypeScript/JavaScript React users
 
+![Version](https://img.shields.io/visual-studio-marketplace/v/vadymbiliuk.ts-react-snippets.svg)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/vadymbiliuk.ts-react-snippets.svg)
+![Installs](https://img.shields.io/visual-studio-marketplace/i/vadymbiliuk.ts-react-snippets.svg)
+
 The extension for TypeScript, JavaScript React users.
 
 ### Link for marketplace extension
@@ -186,7 +190,7 @@ export type TypeName = type;
 ### `func`
 
 ```typescript
-export function funcName() {}
+export function funcName(): funcReturnType {}
 ```
 
 ### `afunc`
