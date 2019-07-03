@@ -33,7 +33,11 @@
   },
   "Create function": {
     "prefix": "func",
-    "body": ["export function ${1:funcName}() {", "\t", "}"],
+    "body": [
+      "export function ${1:funcName}(): ${2:funcReturnType} {",
+      "\t",
+      "}"
+    ],
     "description": "Creates TypeScript function"
   },
   "Create arrow function": {
