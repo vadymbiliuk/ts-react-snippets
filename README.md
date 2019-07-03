@@ -167,8 +167,6 @@ export default connect(
 )(ViewName);
 ```
 
-### `condux`
-
 ## Native TypeScript
 
 Please remember that all native TypeScript snippets are included in .tsx files too
