@@ -2,6 +2,12 @@
 
 # Release information
 
+[1.0.1] - 3-07-2019
+
+- Deleted second condux command from README
+- Added return type for typescript function
+- Snippet search fix (ctrl+shift+p/cmd+shift+p)
+
 [1.0.0] - 29-06-2019
 
 - Extension name update

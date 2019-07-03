@@ -186,7 +186,7 @@ export type TypeName = type;
 ### `func`
 
 ```typescript
-export function funcName() {}
+export function funcName(): funcReturnType {}
 ```
 
 ### `afunc`
