@@ -2,6 +2,11 @@
 
 # Release information
 
+[1.1.1] - 5-09-2019
+
+- Name of extensions is changed
+- Fixed README.md
+
 [1.1.0] - 5-09-2019
 
 - Added React Native snippets for JavaScript files and TypeScript

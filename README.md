@@ -1,10 +1,10 @@
-# Extension for TypeScript/JavaScript React users
+# React/React Native/Redux TypeScript Snippets
 
 ![Version](https://img.shields.io/visual-studio-marketplace/v/vadymbiliuk.ts-react-snippets.svg)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/vadymbiliuk.ts-react-snippets.svg)
 ![Installs](https://img.shields.io/visual-studio-marketplace/i/vadymbiliuk.ts-react-snippets.svg)
 
-The extension for TypeScript, JavaScript React users.
+Snippets for React/React Native/Redux with JavaScript and TypeScript lovers
 
 ### Link for marketplace extension
 
