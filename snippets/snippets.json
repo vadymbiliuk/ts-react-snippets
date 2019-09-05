@@ -2,12 +2,17 @@
   "Import React": {
     "prefix": "imr",
     "body": ["import React from 'react';"],
-    "description": "Importing React"
+    "description": "Imports React"
+  },
+  "Import React Native": {
+    "prefix": "imrn",
+    "body": ["import { ${1: ModuleName} } from 'react-native';"],
+    "description": "Imports React Native"
   },
   "Import PropTypes": {
     "prefix": "impt",
     "body": ["import PropTypes from 'prop-types';"],
-    "description": "Importing PropTypes"
+    "description": "Imports PropTypes"
   },
   "Create Redux Container structure": {
     "prefix": "condux",
@@ -51,6 +56,27 @@
     ],
     "description": "Creates React class component"
   },
+  "Create React Native class component": {
+    "prefix": "ncc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\tstate = {};",
+      "\t",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<View>",
+      "\t\t\t\t$0",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Creates React Native class component"
+  },
   "Create React class pure component": {
     "prefix": "cpc",
     "body": [
@@ -67,14 +93,33 @@
       "}",
       ""
     ],
-    "description": "Creates React pire class component"
+    "description": "Creates React pure class component"
+  },
+  "Create React Native class pure component": {
+    "prefix": "ncpc",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "import { View } from 'react';",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<View>",
+      "\t\t\t\t$0",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Creates React Native pure class component"
   },
   "Create React functional component": {
     "prefix": "fc",
     "body": [
       "import React from 'react';",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
@@ -84,6 +129,23 @@
       ""
     ],
     "description": "Creates React functional component"
+  },
+  "Create React Native functional component": {
+    "prefix": "nfc",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native;",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t$0",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      ""
+    ],
+    "description": "Creates React Native functional component"
   },
   "Create useState hook": {
     "prefix": "useState",
@@ -142,5 +204,22 @@
     "prefix": "useDebugValue",
     "body": ["useDebugValue(${1:value}"],
     "description": "Creates React useDebugValue hook"
+  },
+  "Create useSelector hook": {
+    "prefix": "useSelector",
+    "body": [
+      "const ${1:selectedData} = useSelector(state => state.${2:YourObject});"
+    ],
+    "description": "Creates Redux useSelector hook"
+  },
+  "Create useDispatch hook": {
+    "prefix": "useDispatch",
+    "body": ["const dispatch = useDispatch();"],
+    "description": "Creates Redux useDispatch hook"
+  },
+  "Create useStore hook": {
+    "prefix": "useStore",
+    "body": ["const store = useStore();"],
+    "description": "Creates Redux useStore hook"
   }
 }

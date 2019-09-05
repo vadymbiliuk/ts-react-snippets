@@ -41,24 +41,24 @@ Please remember that examples below created for TypeScript. They are same for Ja
 ### `imr`
 
 ```typescript
-import React from 'react';
+import React from "react";
 ```
 
 ### `impt`
 
 ```typescript
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 ```
 
 ### `cc`
 
 ```typescript
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export interface IYourFileName {}
 export interface IYourFileName {}
 
-export class Test extends Component<IYourFileName, IYourFileName> {
+export class YourName extends Component<IYourFileName, IYourFileName> {
   state = {};
 
   render() {
@@ -70,7 +70,7 @@ export class Test extends Component<IYourFileName, IYourFileName> {
 ### `cpc`
 
 ```typescript
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export interface IYourFileName {}
 
@@ -84,14 +84,70 @@ export class YourFileName extends Component<YourFileName> {
 ### `fc`
 
 ```typescript
-import React from 'react';
+import React from "react";
 
 export interface IYourFileName {}
 
-export const Test: React.FC<IYourFileName> = () => {
+export const YourFileName: React.FC<IYourFileName> = ({}) => {
   return <div />;
 };
 ```
+
+## React Native snippets
+
+### `imrn`
+
+```typescript
+import { ModuleName } from "react-native";
+```
+
+### `ncc`
+
+```typescript
+import React, { Component } from "react";
+import { View } from "react-native";
+
+export interface IYourFileName {}
+export interface IYourFileName {}
+
+export class YourName extends Component<IYourFileName, IYourFileName> {
+  state = {};
+
+  render() {
+    return <View />;
+  }
+}
+```
+
+### `ncpc`
+
+```typescript
+import React, { Component } from "react";
+import { View } from "react-native";
+
+export interface IYourFileName {}
+
+export class YourFileName extends Component<YourFileName> {
+  render() {
+    return <View />;
+  }
+}
+```
+
+### `nfc`
+
+```typescript
+import React from "react";
+import { View } from "react-native";
+
+export interface IYourFileName {}
+
+export const YourFileName: React.FC<IYourFileName> = ({}) => {
+  return <View />;
+};
+```
+
+## React Hooks
 
 ### `useState`
 
@@ -158,8 +214,8 @@ useDebugValue(value);
 ### `condux`
 
 ```typescript
-import { connect } from 'react-redux';
-import { ViewName } from 'ViewPath';
+import { connect } from "react-redux";
+import { ViewName } from "ViewPath";
 
 const mapStateToProps = state => ({});
 
@@ -169,6 +225,26 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(ViewName);
+```
+
+## Redux Hooks
+
+### `useSelector`
+
+```typescript
+const selectedData = useSelector(state => state.YourObject);
+```
+
+### `useDispatch`
+
+```typescript
+const dispatch = useDispatch();
+```
+
+### `useStore`
+
+```typescript
+const store = useStore();
 ```
 
 ## Native TypeScript

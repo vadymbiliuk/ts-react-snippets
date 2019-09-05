@@ -2,6 +2,12 @@
 
 # Release information
 
+[1.1.0] - 5-09-2019
+
+- Added React Native snippets for JavaScript files and TypeScript
+- Added React Redux hook snippets
+- Updated README.md
+
 [1.0.1] - 3-07-2019
 
 - Deleted second condux command from README
