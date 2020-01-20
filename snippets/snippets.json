@@ -34,14 +34,81 @@
       ")(${1:ViewName});",
       "\t"
     ],
-    "description": "Create Redux Container structure"
+    "description": "Creates Redux Container structure"
+  },
+  "Create Redux Store by Redux Toolkit createStore()": {
+    "prefix": "createStore",
+    "body": [
+      "import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';",
+      "",
+      "const preloadedState = {",
+      "",
+      "}",
+      "",
+      "const middleware = [...getDefaultMiddleware()];",
+      "",
+      "export const store = configureStore({",
+      "\tpreloadedState,",
+      "\treducer,",
+      "\tmiddleware,",
+      "\tdevTools: process.env.NODE_ENV !== 'production',",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Store with using Redux Toolkit createStore()"
+  },
+  "Create Redux Reducer by Redux Toolkit createReducer()": {
+    "prefix": "createReducer",
+    "body": [
+      "import { createReducer } from '@reduxjs/toolkit';",
+      "",
+      "const INITIAL_STATE = {",
+      "",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = createReducer(INITIAL_STATE, {",
+      "\t[${2:ActionType}]: (state, action) => {},",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Reducer with using Redux Toolkit createReducer()"
+  },
+  "Create Redux Action by Redux Toolkit createAction()": {
+    "prefix": "createAction",
+    "body": [
+      "import { createAction } from '@reduxjs/toolkit';",
+      "",
+      "export const ${1:ActionName} = createAction(${2:ActionType});",
+      ""
+    ],
+    "describe": "Creates Redux Action with using Redux Toolkit createAction()"
+  },
+  "Create Redux Slice by Redux Toolkit createSlice()": {
+    "prefix": "createSlice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit';",
+      "",
+      "const INITIAL_STATE = {",
+      "",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = createSlice({",
+      "\tname: '${1:${TM_FILENAME_BASE}}'",
+      "\tinitialState: INITIAL_STATE",
+      "\treducers: {",
+      "\t\t[${2:ActionType}]: (state, action) => {},",
+      "\t},",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Slice with using Redux Toolkit createSlice()"
   },
   "Create React class component": {
     "prefix": "cc",
     "body": [
       "import React, { Component } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
       "\tstate = {};",
       "\t",
       "\trender() {",
@@ -52,7 +119,8 @@
       "\t\t);",
       "\t}",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React class component"
   },
@@ -62,7 +130,7 @@
       "import React, { Component } from 'react';",
       "import { View } from 'react-native';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
       "\tstate = {};",
       "\t",
       "\trender() {",
@@ -73,7 +141,8 @@
       "\t\t);",
       "\t}",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React Native class component"
   },
@@ -82,7 +151,7 @@
     "body": [
       "import React, { PureComponent } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<div>",
@@ -91,7 +160,8 @@
       "\t\t);",
       "\t}",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React pure class component"
   },
@@ -101,7 +171,7 @@
       "import React, { PureComponent } from 'react';",
       "import { View } from 'react';",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<View>",
@@ -110,7 +180,8 @@
       "\t\t);",
       "\t}",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React Native pure class component"
   },
@@ -119,14 +190,15 @@
     "body": [
       "import React from 'react';",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
+      "const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t$0",
       "\t\t</div>",
       "\t);",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React functional component"
   },
@@ -134,16 +206,17 @@
     "prefix": "nfc",
     "body": [
       "import React from 'react';",
-      "import { View } from 'react-native;",
+      "import { View } from 'react-native';",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
+      "const ${1:${TM_FILENAME_BASE}} = ({ }) => {",
       "\treturn (",
       "\t\t<View>",
       "\t\t\t$0",
       "\t\t</View>",
       "\t);",
       "}",
-      ""
+      "",
+      "export ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Creates React Native functional component"
   },

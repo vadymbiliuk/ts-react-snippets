@@ -2,6 +2,13 @@
 
 # Release information
 
+[1.1.2] -20-01-2020
+
+- React functional components now exported in different line. It's related to inability to see component name in React DevTools
+- Redux Toolkit snippets
+- Fixed View import in React Native functional component
+- New logo
+
 [1.1.1] - 5-09-2019
 
 - Name of extensions is changed
