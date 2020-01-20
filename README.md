@@ -55,16 +55,18 @@ import PropTypes from "prop-types";
 ```typescript
 import React, { Component } from "react";
 
-export interface IYourFileName {}
-export interface IYourFileName {}
+export interface IFileName {}
+export interface IFileName {}
 
-export class YourName extends Component<IYourFileName, IYourFileName> {
+class FileName extends Component<IFileName, IFileName> {
   state = {};
 
   render() {
     return <div />;
   }
 }
+
+export { FileName };
 ```
 
 ### `cpc`
@@ -72,13 +74,15 @@ export class YourName extends Component<IYourFileName, IYourFileName> {
 ```typescript
 import React, { Component } from "react";
 
-export interface IYourFileName {}
+export interface IFileName {}
 
-export class YourFileName extends Component<YourFileName> {
+class FileName extends Component<IFileName> {
   render() {
     return <div />;
   }
 }
+
+export { FileName };
 ```
 
 ### `fc`
@@ -86,11 +90,13 @@ export class YourFileName extends Component<YourFileName> {
 ```typescript
 import React from "react";
 
-export interface IYourFileName {}
+export interface IFileName {}
 
-export const YourFileName: React.FC<IYourFileName> = ({}) => {
+const FileName: React.FC<IFileName> = ({}) => {
   return <div />;
 };
+
+export { FileName };
 ```
 
 ## React Native snippets
@@ -107,16 +113,18 @@ import { ModuleName } from "react-native";
 import React, { Component } from "react";
 import { View } from "react-native";
 
-export interface IYourFileName {}
-export interface IYourFileName {}
+export interface IFileName {}
+export interface IFileName {}
 
-export class YourName extends Component<IYourFileName, IYourFileName> {
+class FileName extends Component<IFileName, IFileName> {
   state = {};
 
   render() {
     return <View />;
   }
 }
+
+export { FileName };
 ```
 
 ### `ncpc`
@@ -125,13 +133,15 @@ export class YourName extends Component<IYourFileName, IYourFileName> {
 import React, { Component } from "react";
 import { View } from "react-native";
 
-export interface IYourFileName {}
+export interface IFileName {}
 
-export class YourFileName extends Component<YourFileName> {
+class FileName extends Component<IFileName> {
   render() {
     return <View />;
   }
 }
+
+export { FileName };
 ```
 
 ### `nfc`
@@ -140,11 +150,13 @@ export class YourFileName extends Component<YourFileName> {
 import React from "react";
 import { View } from "react-native";
 
-export interface IYourFileName {}
+export interface IFileName {}
 
-export const YourFileName: React.FC<IYourFileName> = ({}) => {
+export const FileName: React.FC<IFileName> = ({}) => {
   return <View />;
 };
+
+export { FileName };
 ```
 
 ## React Hooks

@@ -120,7 +120,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React class component"
   },
@@ -142,7 +142,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React Native class component"
   },
@@ -161,7 +161,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React pure class component"
   },
@@ -181,7 +181,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React Native pure class component"
   },
@@ -198,7 +198,7 @@
       "\t);",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React functional component"
   },
@@ -216,7 +216,7 @@
       "\t);",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React Native functional component"
   },

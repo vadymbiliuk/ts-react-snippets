@@ -2,6 +2,11 @@
 
 # Release information
 
+[1.1.4] -20-01-2020
+
+- Fixed export in React components import
+- README fix
+
 [1.1.3] -20-01-2020
 
 - Redux snippets moved from tsx to ts

@@ -127,7 +127,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React class component with interfaces"
   },
@@ -156,7 +156,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React class component with interfaces"
   },
@@ -179,7 +179,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React class pure component with interface"
   },
@@ -203,7 +203,7 @@
       "\t}",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React Native class pure component with interface"
   },
@@ -224,7 +224,7 @@
       "\t);",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React functional component with interface"
   },
@@ -246,7 +246,7 @@
       "\t);",
       "}",
       "",
-      "export ${1:${TM_FILENAME_BASE}}"
+      "export { ${1:${TM_FILENAME_BASE}} };"
     ],
     "description": "Creates React Native functional component with interface"
   },
