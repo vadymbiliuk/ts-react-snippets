@@ -2,6 +2,10 @@
 
 # Release information
 
+[1.1.3] -20-01-2020
+
+- Redux snippets moved from tsx to ts
+
 [1.1.2] -20-01-2020
 
 - React functional components now exported in different line. It's related to inability to see component name in React DevTools

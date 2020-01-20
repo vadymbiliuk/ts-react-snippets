@@ -221,10 +221,62 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = {};
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ViewName);
+export default connect(mapStateToProps, mapDispatchToProps)(ViewName);
+```
+
+### `createStore`
+
+```typescript
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+
+const preloadedState = {};
+
+const middleware = [...getDefaultMiddleware()];
+
+export const store = configureStore({
+  preloadedState,
+  reducer,
+  middleware,
+  devTools: process.env.NODE_ENV !== "production"
+});
+```
+
+### `createReducer`
+
+```typescript
+import { createReducer } from "@reduxjs/toolkit";
+
+const INITIAL_STATE = {};
+
+const middleware = [...getDefaultMiddleware()];
+
+export const FileName = createReducer(INITIAL_STATE, {
+  [ActionType]: (state, action) => {}
+});
+```
+
+### `createAction`
+
+```typescript
+import { createAction } from "@reduxjs/toolkit";
+
+export const ActionName = createAction(ActionType);
+```
+
+### `createSlice`
+
+```typescript
+import { createSlice } from "@reduxjs/toolkit";
+
+const INITIAL_STATE = {};
+
+export const FileName = createSlice({
+  name: "FileName",
+  initialState: INITIAL_STATE,
+  reducers: {
+    [ActionType]: (state, action) => {}
+  }
+});
 ```
 
 ## Redux Hooks

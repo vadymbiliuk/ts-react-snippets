@@ -21,6 +21,73 @@
     ],
     "description": "Creates Redux Container structure"
   },
+  "Create Redux Store by Redux Toolkit createStore()": {
+    "prefix": "createStore",
+    "body": [
+      "import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';",
+      "",
+      "const preloadedState = {",
+      "",
+      "}",
+      "",
+      "const middleware = [...getDefaultMiddleware()];",
+      "",
+      "export const store = configureStore({",
+      "\tpreloadedState,",
+      "\treducer,",
+      "\tmiddleware,",
+      "\tdevTools: process.env.NODE_ENV !== 'production',",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Store with using Redux Toolkit createStore()"
+  },
+  "Create Redux Reducer by Redux Toolkit createReducer()": {
+    "prefix": "createReducer",
+    "body": [
+      "import { createReducer } from '@reduxjs/toolkit';",
+      "",
+      "const INITIAL_STATE = {",
+      "",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = createReducer(INITIAL_STATE, {",
+      "\t[${2:ActionType}]: (state, action) => {},",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Reducer with using Redux Toolkit createReducer()"
+  },
+  "Create Redux Action by Redux Toolkit createAction()": {
+    "prefix": "createAction",
+    "body": [
+      "import { createAction } from '@reduxjs/toolkit';",
+      "",
+      "export const ${1:ActionName} = createAction(${2:ActionType});",
+      ""
+    ],
+    "describe": "Creates Redux Action with using Redux Toolkit createAction()"
+  },
+  "Create Redux Slice by Redux Toolkit createSlice()": {
+    "prefix": "createSlice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit';",
+      "",
+      "const INITIAL_STATE = {",
+      "",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = createSlice({",
+      "\tname: '${1:${TM_FILENAME_BASE}}'",
+      "\tinitialState: INITIAL_STATE",
+      "\treducers: {",
+      "\t\t[${2:ActionType}]: (state, action) => {},",
+      "\t},",
+      "});",
+      ""
+    ],
+    "describe": "Creates Redux Slice with using Redux Toolkit createSlice()"
+  },
   "Create TypeScript interface": {
     "prefix": "int",
     "body": ["export interface I${1:InterfaceName} {", "\t", "}"],
