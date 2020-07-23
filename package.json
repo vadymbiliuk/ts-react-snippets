@@ -5,7 +5,7 @@
   "version": "1.1.4",
   "author": "Vadym Biliuk (vadym.biliuk@gmail.com) https://github.com/vadymbiliuk",
   "publisher": "vadymbiliuk",
-  "main": "src/extension.ts",
+  "main": "./src/extension.ts",
   "keywords": [
     "snippets",
     "typescript",
@@ -30,7 +30,6 @@
   "activationEvents": [
     "onCommand:extension.tsrSnippets"
   ],
-  "main": "./out/src/extension.js",
   "contributes": {
     "commands": [
       {
