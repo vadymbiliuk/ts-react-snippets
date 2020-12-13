@@ -212,7 +212,7 @@
     "body": [
       "import React from 'react';",
       "",
-      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "export type I${1:${TM_FILENAME_BASE}}Props = {",
       "\t",
       "}",
       "",
@@ -234,7 +234,7 @@
       "import React from 'react';",
       "import { View } from 'react-native';",
       "",
-      "export interface I${1:${TM_FILENAME_BASE}}Props {",
+      "export type I${1:${TM_FILENAME_BASE}}Props = {",
       "\t",
       "}",
       "",
