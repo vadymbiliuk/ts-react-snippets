@@ -2,7 +2,7 @@
   "name": "ts-react-snippets",
   "displayName": "React/React Native/Redux TypeScript Snippets",
   "description": "The snippets for React/React Native/Redux with JavaScript and TypeScript lovers",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "author": "Vadym Biliuk (vadym.biliuk@gmail.com) https://github.com/vadymbiliuk",
   "publisher": "vadymbiliuk",
   "main": "./src/extension.ts",
