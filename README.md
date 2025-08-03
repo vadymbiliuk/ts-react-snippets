@@ -1,3 +1,5 @@
+# Warning: Not planning to support
+
 # React/React Native/Redux TypeScript Snippets
 
 ![Version](https://img.shields.io/visual-studio-marketplace/v/vadymbiliuk.ts-react-snippets.svg)
